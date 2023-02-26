@@ -1,17 +1,27 @@
-"C:\Program Files\JetBrains\CLion 2022.2.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2022.2.1/bin/ninja/win/ninja.exe" -G Ninja -S C:\Users\vv\Documents\Projects\bml-traffic -B C:\Users\vv\Documents\Projects\bml-traffic\cmake-build-debug
--- The C compiler identification is GNU 7.3.0
--- The CXX compiler identification is GNU 7.3.0
+C:\Windows\system32\wsl.exe --distribution Ubuntu-22.04 --exec /bin/bash -c "export CMAKE_COLOR_DIAGNOSTICS=ON && export CLION_IDE=TRUE && export JETBRAINS_IDE=TRUE && cd /mnt/c/Users/vv/Documents/Projects/bml-traffic/cmake-build-debug && /usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G 'CodeBlocks - Unix Makefiles' -S /mnt/c/Users/vv/Documents/Projects/bml-traffic -B /mnt/c/Users/vv/Documents/Projects/bml-traffic/cmake-build-debug"
+-- The C compiler identification is GNU 11.3.0
+-- The CXX compiler identification is GNU 11.3.0
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
--- Check for working C compiler: C:/mingw64/bin/gcc.exe - skipped
+-- Check for working C compiler: /usr/bin/cc - skipped
 -- Detecting C compile features
 -- Detecting C compile features - done
 -- Detecting CXX compiler ABI info
 -- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: C:/mingw64/bin/c++.exe - skipped
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
--- Found SFML 2.5.1 in C:/Users/vv/Documents/Projects/bml-traffic/libs/SFML-2.5.1/lib/cmake/SFML
+-- Found SFML 2.5.1 in /mnt/c/Users/vv/Documents/Projects/bml-traffic/libs/SFML-2.5.1/lib/cmake/SFML
 -- Configuring done
 -- Generating done
--- Build files have been written to: C:/Users/vv/Documents/Projects/bml-traffic/cmake-build-debug
+-- Build files have been written to: /mnt/c/Users/vv/Documents/Projects/bml-traffic/cmake-build-debug
+CMake File API: C:\Users\vv\Documents\Projects\bml-traffic\cmake-build-debug: target-bml-traffic-Debug-7c90a23715b05879bd03.json: Cannot resolve compiler path '/usr/bin/c++'
+
+Cannot get compiler information:
+	Compiler exited with error code 1: C:\mingw64\bin\c++.exe -xc++ -isystemC:/Users/vv/Documents/Projects/bml-traffic/libs/SFML-2.5.1/include -g -std=gnu++1z -fpch-preprocess -v -dD -E
+	c++.exe: error: /mnt/c/Users/vv/AppData/Local/Temp/response-file10128064539693926578: No such file or directory
+	c++.exe: error: /mnt/c/Users/vv/AppData/Local/Temp/compiler-file6418469592198412546: No such file or directory
+	c++.exe: fatal error: no input files
+	compilation terminated.
+	
+	
